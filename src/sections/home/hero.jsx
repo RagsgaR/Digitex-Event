@@ -166,7 +166,7 @@ export default function HeroSection() {
                 <Grid container>
                   <Grid xs={12} sx={{padding:{xs:"0px 10px 0px 0px",md:"0"}}}>
                     <Typography variant="h4" sx={{color:theme.palette.primary.contrastText,float:"right",fontSize:{xs:"2rem",md:"2.5rem"}}}>
-                      <Box component={"span"}  sx={{display:"block",fontWeight:"521"}}>29,30,31</Box>
+                      <Box component={"span"}  sx={{display:"block",fontWeight:"521"}}>29-30-31</Box>
                       <Box component={"span"}  sx={{float:"right"}}>Mars</Box>
                     </Typography >
                   </Grid>

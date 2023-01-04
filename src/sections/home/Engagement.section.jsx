@@ -4,6 +4,7 @@ import Main2 from "../../assets/Creation/main2.png"
 import Statistique from "../../assets/Creation/Statistique.png"
 import Parameter from "../../assets/Creation/Parameter.png"
 import { motion } from "framer-motion"
+import Conference from "../../assets/Creation/Conference.png"
 
 
 const ContentTitle = styled(Grid)(({theme})=>({
@@ -109,12 +110,12 @@ export function EngagementSection(){
          <Grid container 
           component={motion.div} variants={item}>
             <Grid xs={3}>
-              <img src={Statistique} width="120" hieght='120' alt=""/>
+              <img src={Conference} width="120" hieght='120' alt=""/>
             </Grid>
             <Grid xs={9}>
               <Title>
                 <span style={{display:"block",color:"orange",fontSize:"30px"}}>4/</span>
-                <span style={{color:"#B712A5"}}>RENCONTREZ</span> 
+                <span style={{color:"#B712A5"}}>RENCONTRES</span> 
                 &#140; et  &#140;
                 <span style={{color:"#B712A5"}}>PROFESSIONNELS</span> &#140;
                 du secteur et développer votre réseau de prescripteurs
@@ -191,12 +192,12 @@ export function EngagementSection(){
           sx={{marginTop:"20px"}}
           component={motion.div} variants={item}>
             <Grid xs={4} sm={2}>
-              <img src={Statistique} width="120" hieght='120' alt=""/>
+              <img src={Conference} width="120" hieght='120' alt=""/>
             </Grid>
             <Grid xs={8}>
               <Title>
                 <span style={{display:"block",color:"orange",fontSize:"30px"}}>4/</span>
-                <span style={{color:"#B712A5"}}>RENCONTREZ</span> 
+                <span style={{color:"#B712A5"}}>RENCONTRES</span> 
                 &#140; et  &#140;
                 <span style={{color:"#B712A5"}}>PROFESSIONNELS</span> &#140;
                 du secteur et développer votre réseau de prescripteurs

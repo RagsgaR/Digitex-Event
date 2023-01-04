@@ -1,7 +1,6 @@
 import { styled, Typography,Grid,Box } from "@mui/material"
 import React from "react"
 import Pyramide from "../../assets/pyramide.png"
-import Cube from "../../assets/cube.png"
 import { motion } from "framer-motion"
 // import Fond from "../../assets/pngegg.png"
 
@@ -50,28 +49,18 @@ export function Presentation(){
   <Box sx={{marginTop:"30px",zIndex:"99",position:"relative"}} component={motion.div} initial="hide" whileInView="show"  viewport={viewportConfig} >
     {/* <Box component={"img"} sx={{height:"auto",width:"100%",position:"absolute",zIndex:"1"}} src={Fond} alt=""/> */}
     <Box sx={{zIndex:"99"}}>
-      <Grid container  component={motion.div} variants={item}>
-          <Grid xs={12} sm={7}>
             <ContentTitle
             sx={{  width:{xs:"100vw",sm:"380px"},marginLeft:{xs:"0",sm:"4px"}}}
             container>
-            <Grid xs={10}>
-            <Title sx={{fontSize:{xs:"16px",sm:"20px"}}}>
-              PRESENTATION DIGITEX
-            </Title>          
-            </Grid>
-            <Grid xs={2}>
-              <img style={{width:"auto",height:"25px"}} src={Pyramide} alt=''/>
-            </Grid>
-              </ContentTitle>
-          </Grid>
-          <Grid sm={4} sx={{display:{xs:"none",sm:"flex"}}}>
-                <img style={{width:"auto",height:"25px",color:"white",marginTop:"12px"}} src={Cube} alt=""/>
-          </Grid>
-            <Grid md={0.7} sx={{display:{xs:"none",md:"flex"}}}>
-                <img style={{width:"auto",height:"40px",color:"white"}} src={Cube} alt=""/>
-          </Grid>
-      </Grid>
+              <Grid xs={10}>
+              <Title sx={{fontSize:{xs:"16px",sm:"20px"}}}>
+                PRESENTATION DIGITEX
+              </Title>          
+              </Grid>
+              <Grid xs={2}>
+                <img style={{width:"auto",height:"25px"}} src={Pyramide} alt=''/>
+              </Grid>
+            </ContentTitle>
       <Box p={2} component={motion.div} variants={item}>
           <Para2>
               A l'ére de l'entreprise digitale,l'innovation et l'accélération vers le numérique engagent les entreprises vers une évolution 
