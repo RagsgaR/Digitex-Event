@@ -5,7 +5,6 @@ import PlaneImage from "../../assets/Work.png"
 import { motion } from "framer-motion"
 
 const Title = styled(Typography)(({theme})=>({
-  fontSize:"20px",
   color:"white",
   fontWeight:"515",
 }))
@@ -76,7 +75,7 @@ export function PlaneSection(){
           whileInView="show"
           container>
           <Grid xs={10}>
-           <Title>
+           <Title sx={{fontSize:{xs:"16px",sm:"20px"}}}>
              PLAN DE COMMUNICATION
            </Title>          
           </Grid>

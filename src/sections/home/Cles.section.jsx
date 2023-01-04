@@ -13,7 +13,6 @@ import { motion } from "framer-motion"
 const ColorFleche="yellow"
 
 const Title = styled(Typography)(({theme})=>({
-  fontSize:"20px",
   color:"white",
   fontWeight:"515",
 }))
@@ -94,7 +93,7 @@ export function KeyNumbers(){
           sx={{  width:{xs:"100vw",sm:"380px"},marginLeft:{xs:"0",sm:"4px"}}}
           container >
             <Grid xs={10} component={motion.div} variants={item}>
-              <Title >
+              <Title sx={{fontSize:{xs:"16px",sm:"20px"}}}>
                LES CHIFFRES CLÉS
               </Title>          
             </Grid>
@@ -201,12 +200,12 @@ export function KeyNumbers(){
               </Grid>
             </Grid>
             <Grid xs={2} md={2} component={motion.div} variants={item}  sx={{marginLeft:{xs:"0",md:"52px"}}}>
-            <Grid container sx={{marginLeft:{xs:"16px",sm:"0"},marginTop:{xs:"32px",sm:"44px",lg:"0"}}}>
+            <Grid container sx={{marginTop:{xs:"32px",sm:"44px",lg:"0"}}}>
                     <Grid xs={12} sx={{marginLeft:{xs:"0",sm:"22px",lg:"0"}}}>
                        <ExpandMoreCode/>
                     </Grid>
-                    <Grid  xs={11} sx={{marginLeft:{xs:"22px",sm:"0"}}}>
-                      <Title sx={{textAlign:"center",borderBottom:`4px solid ${ColorFleche}`,marginLeft:"-34px",fontSize:{xs:"10px",md:"1.56vw"},width:{xs:"34px",sm:"auto"}}}>
+                    <Grid  xs={11}>
+                      <Title sx={{textAlign:"center",borderBottom:`4px solid ${ColorFleche}`,marginLeft:"4px",fontSize:{xs:"10px",md:"1.56vw"},width:{xs:"34px",sm:"auto"}}}>
                         <span style={{color:"#B712A5"}}>+ 1000 </span>
                         m2 DE SURFACE COUVERTE
                       </Title>
