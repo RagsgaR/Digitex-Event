@@ -2,7 +2,7 @@ import React from "react";
 import HeroSection from "../sections/home/hero";
 import {Presentation} from "../sections/home/Presentation.section"
 import {EngagementSection} from "../sections/home/Engagement.section"
-import {PlaneSection} from "../sections/home/Plane.section"
+import {ObjectifSection} from "../sections/home/Objectif.section"
 import {KeyNumbers} from "../sections/home/Cles.section"
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
         <KeyNumbers/>
       </div>
       <div>
-        <PlaneSection/>
+        <ObjectifSection/>
       </div>
       <div >
         <EngagementSection/>

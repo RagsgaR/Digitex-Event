@@ -5,6 +5,7 @@ import Statistique from "../../assets/Creation/Statistique.png"
 import Parameter from "../../assets/Creation/Parameter.png"
 import { motion } from "framer-motion"
 import Conference from "../../assets/Creation/Conference.png"
+import { Space } from "../../config/space"
 
 
 const ContentTitle = styled(Grid)(({theme})=>({
@@ -17,21 +18,21 @@ const Title = styled(Typography)(({theme})=>({
   color:"white",
   fontWeight:"515",
 }))
-const item = {
-  hide: {
-    opacity: 0,
-    y: 400,
+const item={
+  hide:{
+    opacity:0,
+    y:200
   },
   show: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.8,
+      duration: 0.5,
       staggerChildren: 0.2,
       delayChildren: 0.2,
     },
-  },
-};
+  }
+}
 
 
 export function EngagementSection(){
@@ -40,8 +41,9 @@ export function EngagementSection(){
   }
   return(
     <>
-    <Box mt={"2rem"} component={motion.div} variants={item} initial="hide" whileInView="show" viewport={viewportConfig}>
-      <ContentTitle
+    <Box mt={"2rem"} component={motion.div} initial="hide" whileInView="show" viewport={viewportConfig}>
+         <ContentTitle
+          component={motion.div} variants={item}
             sx={{  width:{xs:"100vw",sm:"680px"},marginLeft:{xs:"0",sm:"4px"}}}
             container>
             <Title sx={{fontSize:{xs:"16px",sm:"20px"},paddingRight:{xs:"5px",sm:"0"}}}>
@@ -60,7 +62,7 @@ export function EngagementSection(){
               <Title>
                 <span style={{display:"block",color:"orange",fontSize:"30px"}}>1/</span>
                 <span style={{color:"#B712A5"}}>RENCONTREZ</span>
-                &#140; un &#140;
+                <Space/> un <Space/>
                 <span style={{color:"#B712A5"}}>PUBLIC QUALIFIÉ</span>
                 : Des professionnels du secteurs ,des acheteurs et consommateurs potentiels,des investisseurs,
               </Title>
@@ -77,7 +79,7 @@ export function EngagementSection(){
               <Title>
                 <span style={{display:"block",color:"orange",fontSize:"30px"}}>3/</span>
                 <span style={{color:"#B712A5"}}>RENFORCER</span> 
-                &#140; votre notoriété  et  &#140;
+                <Space/> votre notoriété  et  <Space/>
                 <span style={{color:"#B712A5"}}>DÉVELOPPER</span>
                 votre activité
               </Title>
@@ -97,10 +99,10 @@ export function EngagementSection(){
               <Title>
                 <span style={{display:"block",color:"orange",fontSize:"30px"}}>2/</span>
                 <span style={{color:"#B712A5"}}>Présenter</span>
-                &#140; vos &#140;
+                <Space/> vos <Space/>
                 <span style={{color:"#B712A5"}}>PRODUITS</span>,
-                <span style={{color:"#B712A5"}}>SAVOIR-FAIRE</span>  &#140; et   &#140;
-                <span style={{color:"#B712A5"}}>SERVICES</span>  &#140;
+                <span style={{color:"#B712A5"}}>SAVOIR-FAIRE</span>  <Space/> et   <Space/>
+                <span style={{color:"#B712A5"}}>SERVICES</span>  <Space/>
                 dans un cadre dynamique et stimulant
               </Title>
             </Grid>
@@ -116,8 +118,8 @@ export function EngagementSection(){
               <Title>
                 <span style={{display:"block",color:"orange",fontSize:"30px"}}>4/</span>
                 <span style={{color:"#B712A5"}}>RENCONTRES</span> 
-                &#140; et  &#140;
-                <span style={{color:"#B712A5"}}>PROFESSIONNELS</span> &#140;
+                <Space/> et  <Space/>
+                <span style={{color:"#B712A5"}}>PROFESSIONNELS</span> <Space/>
                 du secteur et développer votre réseau de prescripteurs
               </Title>
             </Grid>
@@ -139,7 +141,7 @@ export function EngagementSection(){
               <Title>
                 <span style={{display:"block",color:"orange",fontSize:"30px"}}>1/</span>
                 <span style={{color:"#B712A5"}}>RENCONTREZ</span>
-                &#140; un &#140;
+                <Space/> un <Space/>
                 <span style={{color:"#B712A5"}}>PUBLIC QUALIFIÉ</span>
                 : Des professionnels du secteurs ,des acheteurs et consommateurs potentiels,des investisseurs,
               </Title>
@@ -157,10 +159,10 @@ export function EngagementSection(){
               <Title>
                 <span style={{display:"block",color:"orange",fontSize:"30px"}}>2/</span>
                 <span style={{color:"#B712A5"}}>Présenter</span>
-                &#140; vos &#140;
+                <Space/> vos <Space/>
                 <span style={{color:"#B712A5"}}>PRODUITS</span>,
-                <span style={{color:"#B712A5"}}>SAVOIR-FAIRE</span>  &#140; et   &#140;
-                <span style={{color:"#B712A5"}}>SERVICES</span>  &#140;
+                <span style={{color:"#B712A5"}}>SAVOIR-FAIRE</span>  <Space/> et   <Space/>
+                <span style={{color:"#B712A5"}}>SERVICES</span>  <Space/>
                 dans un cadre dynamique et stimulant
               </Title>
             </Grid>
@@ -179,7 +181,7 @@ export function EngagementSection(){
               <Title>
                 <span style={{display:"block",color:"orange",fontSize:"30px"}}>3/</span>
                 <span style={{color:"#B712A5"}}>RENFORCER</span> 
-                &#140; votre notoriété  et  &#140;
+                <Space/> votre notoriété  et  <Space/>
                 <span style={{color:"#B712A5"}}>DÉVELOPPER</span>
                 votre activité
               </Title>
@@ -198,8 +200,8 @@ export function EngagementSection(){
               <Title>
                 <span style={{display:"block",color:"orange",fontSize:"30px"}}>4/</span>
                 <span style={{color:"#B712A5"}}>RENCONTRES</span> 
-                &#140; et  &#140;
-                <span style={{color:"#B712A5"}}>PROFESSIONNELS</span> &#140;
+                <Space/> et  <Space/>
+                <span style={{color:"#B712A5"}}>PROFESSIONNELS</span> <Space/>
                 du secteur et développer votre réseau de prescripteurs
               </Title>
             </Grid>

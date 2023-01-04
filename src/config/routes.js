@@ -1,7 +1,9 @@
+import React from "react"
 import { Route, Routes } from "react-router-dom";
 import { HomeLayout } from "../layouts";
 import Home from "../pages";
 import Thématique from "../pages/Thématique"
+import Programme from "../pages/Programme"
 
 export const ROUTES = [
   {
@@ -10,20 +12,26 @@ export const ROUTES = [
     component: <HomeLayout />,
     routes: [
       {
+        path:"/Programme",
+        key:"Programme",
+        component:<Programme/>
+      },
+      {
+        path:"/Thematics",
+        key:"Thématique",
+        component:<Thématique/>
+      },
+      {
         path: "/",
         key: "home",
         component: <Home />,
-      },
-      {
-        path:"/Thématique",
-        key:"Thématique",
-        component:<Thématique/>
       }
     ],
   },
 ];
 
 export function RenderRoutes({ routes }) {
+
   return (
     <Routes>
       {routes.map((route) => (

@@ -32,13 +32,13 @@ const ComponentLogo=styled(Box)(({theme})=>({
 const item={
   hide:{
     opacity:0,
-    y:400
+    y:200
   },
   show: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.8,
+      duration: 0.5,
       staggerChildren: 0.2,
       delayChildren: 0.2,
     },
@@ -90,9 +90,10 @@ export function KeyNumbers(){
     <>
     <Box sx={{marginTop:"30px"}} component={motion.div} initial="hide" whileInView="show" variants={container} viewport={viewportConfig}>
           <ContentTitle
+          component={motion.div} variants={item}
           sx={{  width:{xs:"100vw",sm:"380px"},marginLeft:{xs:"0",sm:"4px"}}}
           container >
-            <Grid xs={10} component={motion.div} variants={item}>
+            <Grid xs={10}>
               <Title sx={{fontSize:{xs:"16px",sm:"20px"}}}>
                LES CHIFFRES CLÉS
               </Title>          
@@ -133,7 +134,7 @@ export function KeyNumbers(){
                 </Grid>
               </Grid>
             </Grid>
-            <Grid xs={2}>
+            <Grid xs={2} component={motion.div} variants={item}>
                   <ComponentLogo sx={{width:{xs:"65px",md:"9.77vw"},height:{xs:"65px",md:"9.77vw"}}}>
                     <Box component="img" src={Location} sx={{width:{xs:"45px",md:"65px"},height:"auto",marginTop:{xs:"2.56vw",sm:"2.34vw"},marginLeft:{xs:"2.56vw",sm:"2.34vw"}}} alt=""/>
                   </ComponentLogo> 
@@ -173,7 +174,7 @@ export function KeyNumbers(){
             <Grid xs={5} md={4} component={motion.div} variants={item}  sx={{marginLeft:{xs:"0",md:"52px"},marginTop:{xs:"30px",md:"0"}}}>
             <Grid container  sx={{marginTop:{xs:"0",sm:"14px"}}}>
                 <Grid xs={5} sx={{marginLeft:{xs:"27px"}}}>
-                  <Grid container sx={{marginLeft:{xs:"0",md:"-52px"}}} >
+                  <Grid container sx={{marginLeft:{xs:"-12px",md:"-82px"}}} >
                     <Grid xs={12}>
                        <ExpandMoreCode/>
                     </Grid>
@@ -201,11 +202,11 @@ export function KeyNumbers(){
             </Grid>
             <Grid xs={2} md={2} component={motion.div} variants={item}  sx={{marginLeft:{xs:"0",md:"52px"}}}>
             <Grid container sx={{marginTop:{xs:"32px",sm:"44px",lg:"0"}}}>
-                    <Grid xs={12} sx={{marginLeft:{xs:"0",sm:"22px",lg:"0"}}}>
+                    <Grid xs={12} sx={{marginLeft:{xs:"22px",sm:"22px",lg:"6px"}}}>
                        <ExpandMoreCode/>
                     </Grid>
                     <Grid  xs={11}>
-                      <Title sx={{textAlign:"center",borderBottom:`4px solid ${ColorFleche}`,marginLeft:"4px",fontSize:{xs:"10px",md:"1.56vw"},width:{xs:"34px",sm:"auto"}}}>
+                      <Title sx={{textAlign:"center",borderBottom:`4px solid ${ColorFleche}`,marginLeft:{xs:"4px",sm:"-60px"},fontSize:{xs:"10px",md:"1.56vw"},width:{xs:"34px",sm:"auto"}}}>
                         <span style={{color:"#B712A5"}}>+ 1000 </span>
                         m2 DE SURFACE COUVERTE
                       </Title>

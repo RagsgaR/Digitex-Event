@@ -24,13 +24,13 @@ const Para2 = styled(Typography)({
 const item={
   hide:{
     opacity:0,
-    y:400
+    y:200
   },
   show: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.8,
+      duration: 0.5,
       staggerChildren: 0.2,
       delayChildren: 0.2,
     },
@@ -50,6 +50,7 @@ export function Presentation(){
     {/* <Box component={"img"} sx={{height:"auto",width:"100%",position:"absolute",zIndex:"1"}} src={Fond} alt=""/> */}
     <Box sx={{zIndex:"99"}}>
             <ContentTitle
+            component={motion.div} variants={item}
             sx={{  width:{xs:"100vw",sm:"380px"},marginLeft:{xs:"0",sm:"4px"}}}
             container>
               <Grid xs={10}>
@@ -63,13 +64,13 @@ export function Presentation(){
             </ContentTitle>
       <Box p={2} component={motion.div} variants={item}>
           <Para2>
-              A l'ére de l'entreprise digitale,l'innovation et l'accélération vers le numérique engagent les entreprises vers une évolution 
-              croissante.Plus que jamais ,celle-ci doivent s'appuyer sur les nouvelles technologies pour rester pérennes dans un contexte incertain.
+              A l'ére de l'entreprise digitale, l'innovation et l'accélération vers le numérique engagent les entreprises vers une évolution 
+              croissante. Plus que jamais, celle-ci doivent s'appuyer sur les nouvelles technologies pour rester pérennes dans un contexte incertain.
           </Para2>
           <br/>
           <Para2>
-          Parmi les pilliers sur lesquels reposent le pillotage de la performance de l'entreprise ainsi que sa digitalisation ,l'ERP,le CRM,les solution
-          d'E-Achat,la dématérialisation ,la BI ainsi que la Data jouent un rôle stratégique.
+          Parmi les pilliers sur lesquels reposent le pillotage de la performance de l'entreprise ainsi que sa digitalisation, l'ERP, le CRM, les solution
+          d'E-Achat, la dématérialisation, la BI ainsi que la Data jouent un rôle stratégique.
           </Para2>  
           <br/>
           <Para2>

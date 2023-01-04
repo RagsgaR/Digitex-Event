@@ -4,6 +4,7 @@ import { motion, useViewportScroll } from "framer-motion";
 import { useState } from "react";
 import NavDrawer from "./drawer";
 import {useDimensions} from "./drawer/use-dimensions"
+import { useNavigate } from 'react-router-dom';
 import "./Nav.css";
 
 const navStyles = {
@@ -25,6 +26,7 @@ export function Navigation() {
   const containerRef = React.useRef(null);
   const { height } = useDimensions(containerRef);
   const [option,setOption]=React.useState("/")
+  const navigate = useNavigate()
 
   const [hidden, setHidden] = useState(false);
 
@@ -68,9 +70,9 @@ export function Navigation() {
       <NavDrawer/>
       </Box>
       <ul>
-        <li onClick={()=>setOption('/')}><a class={option === "/" ? "active":"test"} href="/">Accueil</a></li>
-        <li onClick={()=>setOption('/Thématique')}><a class={option === "/Thématique" ? "active" : "test"} href="/Thématique">Thématique</a></li>
-        <li><a href="#">Programme</a></li>
+        <li onClick={()=>setOption('/')}><button class={option === "/" ? "active":"test"} onClick={()=>navigate('/')}>Accueil</button></li>
+        <li onClick={()=>setOption('/Thématique')}><button class={option === "/Thématique" ? "active" : "test"} onClick={()=>navigate("/Thematics")}>Thématique</button></li>
+        <li onClick={()=>setOption('/Programme')}><button class={option === "/Programme" ? "active" : "test"} onClick={()=>navigate("/Programme")}>Programme</button></li>
       </ul>
     </motion.div>
   );

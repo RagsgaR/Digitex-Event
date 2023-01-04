@@ -1,6 +1,8 @@
 import { Box, Grid,styled,Typography, useTheme } from "@mui/material";
 import React from "react";
 import BG from "../../assets/Background.jpg"
+import { Space } from "../../config/space";
+import Lieux from "../../assets/Lieux.svg"
 
 
 // const ImageWidth = 180;
@@ -15,7 +17,7 @@ import BG from "../../assets/Background.jpg"
 // const item = {
 //   hide: {
 //     opacity: 0,
-//     x: 400,
+//     x: 200,
 //   },
 //   show: {
 //     opacity: 1,
@@ -26,46 +28,6 @@ import BG from "../../assets/Background.jpg"
 //   },
 // };
 
-// const item2={
-//   hide:{
-//     opacity:0,
-//     y:400
-//   },
-//   show:{
-//     opacity:1,
-//     y:0,
-//     transition:{
-//       duration:0.8,
-//     }
-//   }
-// }
-
-// const imageDown = {
-//   hide: {
-//     opacity: 0,
-//     y: 400,
-//   },
-//   show: {
-//     opacity: 1,
-//     y: 0,
-//     transition: {
-//       duration: 0.8,
-//     },
-//   },
-// };
-// const imageUp = {
-//   hide: {
-//     opacity: 0,
-//     y: -400,
-//   },
-//   show: {
-//     opacity: 1,
-//     y: 0,
-//     transition: {
-//       duration: 0.8,
-//     },
-//   },
-// };
 
 // const partener = {
 //   hide: {
@@ -149,11 +111,11 @@ export default function HeroSection() {
           </Box>
           <Box ref={containerRef} sx={{zIndex:"99",position:"relative",padding:"4px"}}>
             <Grid container >
-              <Grid xs={12} sm={6} sx={{display:"grid",padding:{xs:"20px 0 0 20px",md:"65px 0px 0px 65px"}}}>
+              <Grid xs={12} sm={6} sx={{display:"grid",padding:{xs:"0px 0 0 20px",md:"65px 0px 0px 65px"}}}>
                   <Title sx={{display:"inline"}}>
-                    <Box component={"span"} sx={{fontSize:{xs:"1.5rem",md:"2.1rem"}}}>SALON</Box>
-                    <Box component={"span"} sx={{display:"block",fontWeight:"516",fontSize:{xs:"2.5rem",md:"3.5rem"},marginTop:"-7px"}}> DIGITEX</Box> 
-                    <Box component={"span"} sx={{display:"block",fontWeight:"516",fontSize:{xs:"2.5rem",md:"3.5rem"},marginTop:{xs:"-18px",md:"-27px"}}}> 2023</Box> 
+                    <Box component={"span"} sx={{fontSize:{xs:"2rem",md:"2.6rem"}}}>SALON</Box>
+                    <Box component={"span"} sx={{display:"block",fontWeight:"516",fontSize:{xs:"3rem",md:"4rem"},marginTop:"-7px"}}> DIGITEX</Box> 
+                    <Box component={"span"} sx={{display:"block",fontWeight:"516",fontSize:{xs:"3rem",md:"4rem"},marginTop:{xs:"-18px",md:"-27px"}}}> 2023</Box> 
                   </Title>
                   <Typography variant="h6" sx={{color:theme.palette.primary.contrastText,fontSize:{xs:"1rem",md:"1.25rem"}}}>
                     Digitalisation-Technologie-Externalisation
@@ -165,21 +127,21 @@ export default function HeroSection() {
               <Grid xs={12} sm={6} sx={{padding:{xs:"20px 0px 0px 0px",md:"20px 85px 0px 0px"}}}>
                 <Grid container>
                   <Grid xs={12} sx={{padding:{xs:"0px 10px 0px 0px",md:"0"}}}>
-                    <Typography variant="h4" sx={{color:theme.palette.primary.contrastText,float:"right",fontSize:{xs:"2rem",md:"2.5rem"}}}>
+                    <Typography variant="h4" sx={{color:theme.palette.primary.contrastText,float:"right",fontSize:{xs:"2.25rem",md:"2.75rem"}}}>
                       <Box component={"span"}  sx={{display:"block",fontWeight:"521"}}>29-30-31</Box>
                       <Box component={"span"}  sx={{float:"right"}}>Mars</Box>
                     </Typography >
                   </Grid>
                   <Grid xs={12} sx={{position:"relative",top:{xs:"9px",md:"39px"}}}>
-                    <Typography sx={{textAlign:"end",color:theme.palette.primary.contrastText,fontSize:{xs:"4vw",sm:"1.5rem"},paddingRight:{xs:"10px",md:"0"}}}>
+                    <Typography sx={{textAlign:"end",color:theme.palette.primary.contrastText,fontSize:{xs:"4vw",sm:"2rem"},paddingRight:{xs:"10px",md:"0"}}}>
                       <Box component={"span"}  sx={{display:"block"}}>Lieu : </Box>
-                      <Box component={"span"}  sx={{fontWeight:"512"}}>Au canal Olympia Andohatapenaka</Box>
+                      <Box component={"img"} sx={{width:{xs:"250",sm:"300px"},height:"auto",marginTop:"15px"}} src={Lieux} alt=""/>
                     </Typography>
                   </Grid>
                 </Grid>
               </Grid>
             </Grid>
-            <Grid container sx={{marginTop:{xs:"2rem",md:"8rem"}}}>
+            <Grid container sx={{marginTop:{xs:"1rem",md:"5.5rem"}}}>
               <Grid xs={0} md={6}></Grid>
               <Grid xs={12} md={6}>
                   <Grid container justifyContent={"center"}>
@@ -189,19 +151,19 @@ export default function HeroSection() {
                         <Box component={"span"}  sx={{display:"block",fontSize:"1rem",textAlign:"center"}}>Jours</Box> 
 
                       </Box>
-                      &#140; : &#140;
+                      <Space/> : <Space/>
                       <Box component={'span'}>
                           {minuteur.hour}
                         <Box component={"span"}  sx={{display:"block",fontSize:"1rem",textAlign:"center"}}>Heurs</Box> 
 
                       </Box>
-                       &#140; : &#140;
+                       <Space/> : <Space/>
                       <Box component={'span'}>
                           {minuteur.min} 
                         <Box component={"span"}  sx={{display:"block",fontSize:"1rem",textAlign:"center"}}>Minute</Box> 
 
                       </Box>
-                       &#140; : &#140;
+                       <Space/> : <Space/>
                       <Box component={'span'}>
                           {minuteur.sec} 
                         <Box component={"span"}  sx={{display:"block",fontSize:"1rem",textAlign:"center"}}>second</Box> 

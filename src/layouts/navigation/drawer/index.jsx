@@ -6,6 +6,9 @@ import { MenuToggle } from "./MenuToggle";
 import { Box, Drawer } from "@mui/material";
 import {Button,Grid} from "@mui/material"
 import {Home} from "@mui/icons-material"
+import { useNavigate } from "react-router-dom";
+import { List } from "@mui/icons-material";
+import Book from "../../../assets/Book.png"
 
 const container = {
   hide: {
@@ -34,10 +37,10 @@ const item = {
 };
 
 const NavDrawer = () => {
-  const [Option,setOption]=React.useState("Accueil")
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
+  const navigate = useNavigate()
 
   return (
     <>
@@ -57,14 +60,38 @@ const NavDrawer = () => {
           >
             <Box my={2.2}>
             </Box>
-            <motion.li variants={item} onClick={()=>{setOption('Accueil');toggleOpen()}} style={{display:"flex",justifyContent:"center",padding:"0px 40px 0px 40px"}}>
-              <Button variant="outlined" fullWidth>
+            <motion.li variants={item} onClick={()=>{toggleOpen()}} style={{display:"flex",justifyContent:"center",padding:"0px 40px 0px 40px",marginBottom:"14px"}}>
+              <Button variant="outlined" fullWidth onClick={()=>navigate('/')}>
                   <Grid container alignItems={"center"} justifyContent={"center"}>
                     <Grid xs={2}>
                       <Home/>
                     </Grid>
                     <Grid xs={6}>
                       Accueil
+                    </Grid>
+                  </Grid>
+              </Button>
+            </motion.li>
+            <motion.li variants={item} onClick={()=>{toggleOpen()}} style={{display:"flex",justifyContent:"center",padding:"0px 40px 0px 40px",marginBottom:"14px"}}>
+              <Button variant="outlined" fullWidth onClick={()=>navigate('/Thematics')}>
+                  <Grid container alignItems={"center"} justifyContent={"center"}>
+                    <Grid xs={2}>
+                      <Box component={"img"} sx={{width:"30px",height:"auto"}} src={Book} alt=""/>
+                    </Grid>
+                    <Grid xs={6}>
+                      Thématique
+                    </Grid>
+                  </Grid>
+              </Button>
+            </motion.li>
+            <motion.li variants={item} onClick={()=>{toggleOpen()}} style={{display:"flex",justifyContent:"center",padding:"0px 40px 0px 40px",marginBottom:"14px"}}>
+              <Button variant="outlined" fullWidth onClick={()=>navigate('/Programme')}>
+                  <Grid container alignItems={"center"} justifyContent={"center"}>
+                    <Grid xs={2}>
+                      <List/>
+                    </Grid>
+                    <Grid xs={6}>
+                      Programme
                     </Grid>
                   </Grid>
               </Button>
