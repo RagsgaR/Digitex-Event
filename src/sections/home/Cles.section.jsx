@@ -10,7 +10,7 @@ import { ExpandMore,ExpandLess } from "@mui/icons-material"
 import { motion } from "framer-motion"
 
 
-const ColorFleche="#1142FF"
+const ColorFleche="yellow"
 
 const Title = styled(Typography)(({theme})=>({
   fontSize:"20px",
@@ -20,7 +20,6 @@ const Title = styled(Typography)(({theme})=>({
 const ContentTitle = styled(Grid)(({theme})=>({
   background :theme.palette.background.paper,
   padding:"6px 8px 4px 8px",
-  marginLeft:"4px",
   clipPath:"polygon(99.78% 108.33%, -0.88% 113.89%, -0.88% -11.12%, 91.23% -13.89%)",
 }))
 
@@ -92,7 +91,8 @@ export function KeyNumbers(){
     <>
     <Box sx={{marginTop:"30px"}} component={motion.div} initial="hide" whileInView="show" variants={container} viewport={viewportConfig}>
           <ContentTitle
-          container sx={{  width:{xs:"100vw",sm:"380px"}}} >
+          sx={{  width:{xs:"100vw",sm:"380px"},marginLeft:{xs:"0",sm:"4px"}}}
+          container >
             <Grid xs={10} component={motion.div} variants={item}>
               <Title >
                LES CHIFFRES CLÉS
@@ -113,7 +113,7 @@ export function KeyNumbers(){
                 </Grid>
                 <Grid xs={7.5} p={4} sx={{marginTop:{xs:"-20px",md:"0"}}}>
                   <Title sx={{textAlign:"center",borderBottom:`4px solid ${ColorFleche}`,fontSize:{xs:"10px",md:"1.56vw"},}}>
-                    <span style={{color:"#B33C84"}}>+ 5000 </span>
+                    <span style={{color:"#B712A5"}}>+ 5000 </span>
                     VISITEURS ATTENDUS
                     </Title>
                 </Grid>
@@ -128,7 +128,7 @@ export function KeyNumbers(){
                 </Grid>
                 <Grid xs={7.5} p={4}>
                   <Title sx={{textAlign:"center",borderBottom:`4px solid ${ColorFleche}`,fontSize:{xs:"10px",md:"1.56vw"}}}>
-                    <span style={{color:"#B33C84"}}>+ 10 </span>
+                    <span style={{color:"#B712A5"}}>+ 10 </span>
                     CONFÉRENCES
                     </Title>
                 </Grid>
@@ -151,7 +151,7 @@ export function KeyNumbers(){
                     </Grid>
                     <Grid  xs={12} sx={{marginTop:{xs:"-12px",md:"0"}}}>
                       <Title sx={{textAlign:"center",borderBottom:`4px solid ${ColorFleche}`,marginLeft:{xs:"0",md:"-34px"},fontSize:{xs:"10px",md:"1.56vw"}}}>
-                        <span style={{color:"#B33C84"}}>+ 100 </span>
+                        <span style={{color:"#B712A5"}}>+ 100 </span>
                         STANDS
                       </Title>
                     </Grid>
@@ -180,7 +180,7 @@ export function KeyNumbers(){
                     </Grid>
                     <Grid  xs={12}>
                       <Title sx={{textAlign:"center",borderBottom:`4px solid ${ColorFleche}`,marginLeft:"-34px",fontSize:{xs:"10px",md:"1.56vw"}}}>
-                        <span style={{color:"#B33C84"}}>+ 7 </span>
+                        <span style={{color:"#B712A5"}}>+ 7 </span>
                         UNIVERS THÉMATIQUES
                       </Title>
                     </Grid>
@@ -207,7 +207,7 @@ export function KeyNumbers(){
                     </Grid>
                     <Grid  xs={11} sx={{marginLeft:{xs:"22px",sm:"0"}}}>
                       <Title sx={{textAlign:"center",borderBottom:`4px solid ${ColorFleche}`,marginLeft:"-34px",fontSize:{xs:"10px",md:"1.56vw"},width:{xs:"34px",sm:"auto"}}}>
-                        <span style={{color:"#B33C84"}}>+ 1000 </span>
+                        <span style={{color:"#B712A5"}}>+ 1000 </span>
                         m2 DE SURFACE COUVERTE
                       </Title>
                     </Grid>
