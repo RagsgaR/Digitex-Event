@@ -5,43 +5,8 @@ import { Space } from "../../config/space";
 import Lieux from "../../assets/Lieux.svg"
 
 
-// const ImageWidth = 180;
-
-// const container = {
-//   show: {
-//     transition: {
-//       staggerChildren: 0.2,
-//     },
-//   },
-// };
-// const item = {
-//   hide: {
-//     opacity: 0,
-//     x: 200,
-//   },
-//   show: {
-//     opacity: 1,
-//     x: 0,
-//     transition: {
-//       duration: 0.8,
-//     },
-//   },
-// };
 
 
-// const partener = {
-//   hide: {
-//     opacity: 0,
-//     scale: 0,
-//   },
-//   show: {
-//     opacity: 1,
-//     scale: 1,
-//     transition: {
-//       duration: 0.4,
-//     },
-//   },
-// };
 
 const Title=styled(Typography)(({theme})=>({
   paddingTop:"12px",
@@ -76,10 +41,6 @@ function dateDiff(staticDate,currentDate){
 }
 
 export default function HeroSection() {
-        // const viewportConfig = {
-      //   once: true,
-      //   margin: "320px",
-      // };  
     const theme=useTheme()
     const [currentDate,setCurrentDate]=React.useState(null)
     const [minuteur,setMinuteur]=React.useState('')
@@ -96,7 +57,7 @@ export default function HeroSection() {
     React.useEffect(()=>{
       setHeight(containerRef.current.offsetHeight + 20);
     
-    });
+    },[currentDate]);
 
 
 

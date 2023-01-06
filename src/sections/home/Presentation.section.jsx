@@ -1,7 +1,6 @@
 import { styled, Typography,Grid,Box } from "@mui/material"
 import React from "react"
 import Pyramide from "../../assets/pyramide.png"
-import { motion } from "framer-motion"
 // import Fond from "../../assets/pngegg.png"
 
 const ContentTitle = styled(Grid)(({theme})=>({
@@ -21,36 +20,17 @@ const Para2 = styled(Typography)({
   
 })
 
-const item={
-  hide:{
-    opacity:0,
-    y:200
-  },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      staggerChildren: 0.2,
-      delayChildren: 0.2,
-    },
-  }
-}
 
 
 
 
 export function Presentation(){
-  const viewportConfig={
-    once:true
-  }
   return (
     <>
-  <Box sx={{marginTop:"30px",zIndex:"99",position:"relative"}} component={motion.div} initial="hide" whileInView="show"  viewport={viewportConfig} >
+  <Box sx={{marginTop:"30px",zIndex:"99",position:"relative"}}>
     {/* <Box component={"img"} sx={{height:"auto",width:"100%",position:"absolute",zIndex:"1"}} src={Fond} alt=""/> */}
     <Box sx={{zIndex:"99"}}>
             <ContentTitle
-            component={motion.div} variants={item}
             sx={{  width:{xs:"100vw",sm:"380px"},marginLeft:{xs:"0",sm:"4px"}}}
             container>
               <Grid xs={10}>
@@ -62,7 +42,7 @@ export function Presentation(){
                 <img style={{width:"auto",height:"25px"}} src={Pyramide} alt=''/>
               </Grid>
             </ContentTitle>
-      <Box p={2} component={motion.div} variants={item}>
+      <Box p={2} >
           <Para2>
               A l'ére de l'entreprise digitale, l'innovation et l'accélération vers le numérique engagent les entreprises vers une évolution 
               croissante. Plus que jamais, celle-ci doivent s'appuyer sur les nouvelles technologies pour rester pérennes dans un contexte incertain.

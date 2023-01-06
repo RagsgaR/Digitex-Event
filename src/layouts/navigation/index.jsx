@@ -65,7 +65,7 @@ export function Navigation() {
       transition={{ ease: [0.1, 0.25, 0.3, 1], duration: 0.6 }}
       style={{ ...navStyles, height: isMobile ? "4rem" : "5rem",width:"100vw",zIndex:"2000",background:"rgba(145, 235, 255, 0.82)",boxShadow:"3px 3px 3px #0000007a" }}
     >
-      <div class="logo">Digitex</div>
+      <div class="logo">Digi<Box component={"span"} sx={{color:"#0040ff"}}>tex</Box></div>
       <Box sx={{display:{xs:"block",md:"none"}}}>
       <NavDrawer/>
       </Box>

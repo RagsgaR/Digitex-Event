@@ -36,13 +36,8 @@ export default function Footer() {
     margin: "320px",
   };
   return (
-    <Box mt={"5rem"}>
+    <Box>
       <motion.footer
-        component={motion.div}
-        variants={container}
-        initial="hide"
-        whileInView="show"
-        viewport={viewportConfig}
       >
         <Stack
           height={300}
@@ -58,41 +53,36 @@ export default function Footer() {
             height:"auto",
             paddingBottom:{xs:"0",md:"100px"}
           }}
-          component={motion.div}
-          variants={item}
-          initial="hide"
-          whileInView="show"
-          viewport={viewportConfig}
         >
           <Box p={2} sx={{paddingTop:"42px"}}>
             <Grid container>
               <Grid xs={12} sm={6} md={4} sx={{paddingLeft:"3vw"}}>
-                <Typography component={motion.div} variants={item} sx={{fontSize:"36px",fontFamily:"initial",fontWeight:"538",marginBottom:"22px",textAlign:{xs:"center",sm:"start"}}} color="white">
+                <Typography sx={{fontSize:"36px",fontFamily:"initial",fontWeight:"538",marginBottom:"22px",textAlign:{xs:"center",sm:"start"}}} color="white">
                     Contact
                 </Typography>
-                <Typography component={motion.div} variants={item} sx={{fontSize:"15px",display:"flex",alignItems:"center",marginBottom:"5px",textAlign:{xs:"center",sm:"start"},justifyContent:{xs:"center",sm:"start"}}} color="white">
+                <Typography sx={{fontSize:"15px",display:"flex",alignItems:"center",marginBottom:"5px",textAlign:{xs:"center",sm:"start"},justifyContent:{xs:"center",sm:"start"}}} color="white">
                   <Phone/>  &#160; (+261) 32 02  442 38 
                 </Typography>
-                <Typography component={motion.div} variants={item} sx={{fontSize:"15px",display:"flex",alignItems:"center",marginBottom:"5px",textAlign:{xs:"center",sm:"start"},justifyContent:{xs:"center",sm:"start"}}} color="white">
+                <Typography sx={{fontSize:"15px",display:"flex",alignItems:"center",marginBottom:"5px",textAlign:{xs:"center",sm:"start"},justifyContent:{xs:"center",sm:"start"}}} color="white">
                   <Phone/> &#160; (+261) 34 44 471 31
                 </Typography>
-                <Typography component={motion.div} variants={item} sx={{fontSize:"15px",display:"flex",alignItems:"center",textAlign:{xs:"center",sm:"start"},justifyContent:{xs:"center",sm:"start"}}} color="white">
+                <Typography sx={{fontSize:"15px",display:"flex",alignItems:"center",textAlign:{xs:"center",sm:"start"},justifyContent:{xs:"center",sm:"start"}}} color="white">
                   <Markunread/> &#160; digitex.mdg@gmail.com
                 </Typography>
               </Grid>
               <Grid xs={12} sm={6} md={4}>
-              <Typography component={motion.div} variants={item} sx={{fontSize:"36px",fontFamily:"initial",fontWeight:"538",marginBottom:"22px",textAlign:{xs:"center",sm:"start"}}} color="white">
+              <Typography sx={{fontSize:"36px",fontFamily:"initial",fontWeight:"538",marginBottom:"22px",textAlign:{xs:"center",sm:"start"}}} color="white">
                     Infos Pratique
                 </Typography>
-                <Typography component={motion.div} variants={item} sx={{fontSize:"15px",display:"flex",alignItems:"center",marginBottom:"5px",textAlign:{xs:"center",sm:"start"},justifyContent:{xs:"center",sm:"start"}}} color="white">
+                <Typography sx={{fontSize:"15px",display:"flex",alignItems:"center",marginBottom:"5px",textAlign:{xs:"center",sm:"start"},justifyContent:{xs:"center",sm:"start"}}} color="white">
                   <ArrowForwardIosIcon/> &#160; À propos
                 </Typography>
               </Grid>
               <Grid xs={12} sm={6} md={4}>
-                  <Typography component={motion.div} variants={item} sx={{fontSize:"36px",fontFamily:"initial",fontWeight:"538",marginBottom:"22px",textAlign:{xs:"center",md:"start"}}} color="white">
+                  <Typography sx={{fontSize:"36px",fontFamily:"initial",fontWeight:"538",marginBottom:"22px",textAlign:{xs:"center",md:"start"}}} color="white">
                         nous suivre
                     </Typography>
-                    <Typography component={motion.div} variants={item} sx={{fontSize:"15px",display:"flex",alignItems:"center",marginBottom:"5px",textAlign:{xs:"center",md:"start"},justifyContent:{xs:"center",md:"start"}}} color="white">
+                    <Typography sx={{fontSize:"15px",display:"flex",alignItems:"center",marginBottom:"5px",textAlign:{xs:"center",md:"start"},justifyContent:{xs:"center",md:"start"}}} color="white">
                       <Avatar>
                         <Facebook sx={{color:"#B712A5"}}/>
                       </Avatar>

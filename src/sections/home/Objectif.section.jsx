@@ -15,38 +15,19 @@ const ContentTitle = styled(Grid)(({theme})=>({
 }))
 
 const Triangle=styled(Box)({
-  height:"45px",
-  width:"40px",
+  height:"35px",
+  width:"31px",
   background:"#B712A5",
   clipPath:"polygon(80.64% 47.94%, 1.39% 88.89%, 3.67% 0.24%, 78.25% 44.23%)"
 })
 
-const item={
-  hide:{
-    opacity:0,
-    y:200
-  },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      staggerChildren: 0.2,
-      delayChildren: 0.2,
-    },
-  }
-}
 
 export function ObjectifSection(){
-  const viewportConfig = {
-    once: true,
-    margin: "320px",
-  };
   return(
     <>
-    <Box sx={{marginTop:"40px"}} component={motion.div} variants={item} initial='hide' whileInView="show" viewport={viewportConfig}>
+    <Box sx={{marginTop:"40px"}} >
     <Grid container >
-      <Grid xs={12} md={7} sx={{zIndex:"99"}}   component={motion.div} variants={item}>
+      <Grid xs={12} md={7} sx={{zIndex:"99"}}   >
         <Box>
         <ContentTitle
         sx={{  width:{xs:"100vw",sm:"380px"},marginLeft:{xs:"0",sm:"4px"}}}

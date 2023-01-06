@@ -76,7 +76,7 @@ const NavDrawer = () => {
               <Button variant="outlined" fullWidth onClick={()=>navigate('/Thematics')}>
                   <Grid container alignItems={"center"} justifyContent={"center"}>
                     <Grid xs={2}>
-                      <Box component={"img"} sx={{width:"30px",height:"auto"}} src={Book} alt=""/>
+                      <Box component={"img"} sx={{width:{xs:"25px",sm:"30px"},height:"auto",marginLeft:{xs:"-15px",sm:"0"}}} src={Book} alt=""/>
                     </Grid>
                     <Grid xs={6}>
                       Thématique
