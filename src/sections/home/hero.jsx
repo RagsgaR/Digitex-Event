@@ -134,12 +134,12 @@ export default function HeroSection() {
                         <Box component={"span"}  sx={{display:"block",fontSize:"1rem",textAlign:"center"}}>Minute</Box> 
 
                       </Box>
-                       <Space/> : <Space/>
+                       {/* <Space/> : <Space/>
                       <Box component={'span'}>
                           {minuteur.sec} 
                         <Box component={"span"}  sx={{display:"block",fontSize:"1rem",textAlign:"center"}}>second</Box> 
 
-                      </Box>
+                      </Box> */}
                     </Typography>
                   </Grid>
               </Grid>

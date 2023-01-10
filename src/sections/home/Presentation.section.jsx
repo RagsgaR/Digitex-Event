@@ -61,8 +61,8 @@ export function Presentation(){
           </Para2>
           <br/>
           <Para2>
-              c'est pourquoi ils seront à l'honneur de l'edition du Salon DIGITEX 2022,
-              1es 29 au 31 Mars 2023 prochains à partir de 09H00 au CANAL Olympia larivo Andohatapenaka.
+              c'est pourquoi ils seront à l'honneur de l'edition du Salon DIGITEX 2023,
+              le 29 au 31 Mars 2023 prochains à partir de 09H00 au CANAL Olympia larivo Andohatapenaka.
           </Para2>
       </Box>      
     </Box>

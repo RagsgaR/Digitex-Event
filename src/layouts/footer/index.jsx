@@ -67,7 +67,7 @@ export default function Footer() {
                   <Phone/> &#160; (+261) 34 44 471 31
                 </Typography>
                 <Typography sx={{fontSize:"15px",display:"flex",alignItems:"center",textAlign:{xs:"center",sm:"start"},justifyContent:{xs:"center",sm:"start"}}} color="white">
-                  <Markunread/> &#160; digitex.mdg@gmail.com
+                  <Markunread/> &#160; salon.digitex2022@gmail.com
                 </Typography>
               </Grid>
               <Grid xs={12} sm={6} md={4}>

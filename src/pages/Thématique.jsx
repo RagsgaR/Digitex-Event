@@ -32,7 +32,7 @@ export default function Thématique(){
         </Grid>
         <Grid xs={5}>
           <Title sx={{fontSize:"35px",marginBottom:"24px"}}>
-            univers thématique : 
+            Univers thématiques : 
           </Title>
         <Grid container sx={{marginBottom:"12px",alignItems:"center"}} >
           <Grid xs={2}>
@@ -42,7 +42,7 @@ export default function Thématique(){
           </Grid>
           <Grid xs={9}>
             <Para2>
-              Les entreprises des Services Numérique 
+              Les entreprises de Service Numérique 
             </Para2>
           </Grid>
         </Grid>
@@ -54,7 +54,7 @@ export default function Thématique(){
           </Grid>
           <Grid xs={9}>
             <Para2 >
-              Les entreprises d'Outsoucing : Call Center,assistanat...
+              Les entreprises d'Outsoucing : Call Center,assistant...
             </Para2>
           </Grid>
         </Grid>
@@ -66,7 +66,7 @@ export default function Thématique(){
           </Grid>
           <Grid xs={9}>
             <Para2 >
-              Les fournisseur téléphonique et internet
+              Les fournisseurs téléphoniques et internet
             </Para2>
           </Grid>
         </Grid>
