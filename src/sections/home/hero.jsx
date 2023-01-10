@@ -1,8 +1,10 @@
 import { Box, Grid,styled,Typography, useTheme } from "@mui/material";
 import React from "react";
-import BG from "../../assets/Background.jpg"
+//import BG from "../../assets/Background.jpg"
+import BG from "../../assets/back.jpg"
 import { Space } from "../../config/space";
 import Lieux from "../../assets/Lieux.svg"
+import Vr from "../../assets/VR1.png"
 
 
 
@@ -65,44 +67,52 @@ export default function HeroSection() {
 
   return (
     <>
-      <Box sx={{paddingTop:{xs:"66px",md:"82px"}}}>
+      <Box sx={{paddingTop:{xs:"0px",md:"0px"}}}>
+      {/* <Box sx={{paddingTop:{xs:"66px",md:"82px"}}}> */}
         <Box >
-          <Box sx={{position:"relative"}}>
-            <Box component={"img"}  src={BG} sx={{width:'99.8vw',height:height,position:"absolute",zIndex:"1"}} alt=""/>
+          <Box sx={{position:"absolute"}}>
+            <Box component={"img"}  src={BG} sx={{width:'99.8vw',height:height,zIndex:"1"}} alt=""/>
           </Box>
           <Box ref={containerRef} sx={{zIndex:"99",position:"relative",padding:"4px"}}>
             <Grid container >
-              <Grid xs={12} sm={6} sx={{display:"grid",padding:{xs:"0px 0 0 20px",md:"65px 0px 0px 65px"}}}>
+              <Grid xs={12} sm={2} sx={{display:{xs:"none",md:"grid"},padding:{xs:"0px 0 0 0",md:"110px 0px 0px 1.333vw"}}}>
+                <Box component={"img"} src={Vr} style={{width:"20vw",height:"auto",position:"relative", opacity:"0.8"}} alt=""/>
+              </Grid>
+              <Grid xs={12} sm={6} sx={{display:"grid",padding:{xs:"80px 0 0 20px",md:"120px 0px 0px 4vw"}}}>
                   <Title sx={{display:"inline"}}>
-                    <Box component={"span"} sx={{fontSize:{xs:"2rem",md:"2.6rem"}}}>SALON</Box>
-                    <Box component={"span"} sx={{display:"block",fontWeight:"516",fontSize:{xs:"3rem",md:"4rem"},marginTop:"-7px"}}> DIGITEX</Box> 
-                    <Box component={"span"} sx={{display:"block",fontWeight:"516",fontSize:{xs:"3rem",md:"4rem"},marginTop:{xs:"-18px",md:"-27px"}}}> 2023</Box> 
+                    <Box component={"span"} sx={{fontSize:{xs:"2rem",md:"2.6rem"},color:"#96347c", fontWeight:"516"}}>Salon</Box>
+                    <Box component={"span"} sx={{display:"block",fontWeight:"516",fontSize:{xs:"3rem",md:"4rem"},marginTop:{xs:"-18px",md:"-30px"}}}> DIGITEX<Box component={"span"} sx={{fontSize:{xs:"2.2rem",md:"2.6rem"},color:"#00a3ff"}}>2023</Box></Box> 
+                    <Box component={"span"} sx={{display:"block",fontWeight:"516",color:"#a43981",fontSize:{xs:"1.2rem",md:"2vw", sm:"1.2rem"},marginTop:{xs:"-18px",md:"-22px"}}}> Digitalisation-Technologie-Externalisation</Box> 
+                    {/* <Box component={"span"} sx={{display:"block",fontWeight:"516",fontSize:{xs:"3rem",md:"4rem"},marginTop:{xs:"-18px",md:"-30px"}}}> 2023</Box>  */}
                   </Title>
                   <Typography variant="h6" sx={{color:theme.palette.primary.contrastText,fontSize:{xs:"1rem",md:"1.25rem"}}}>
-                    Digitalisation-Technologie-Externalisation
+                  "La transition numérique au coeur du développement"
                   </Typography>
-                  <Typography variant="body1" sx={{color:theme.palette.primary.contrastText,position:"relative",top:"16px",width:"300px",fontSize:{xs:"0.8rem",md:"1rem"}}}>
-                    " La transition numérique au coeur du développement "
+                  <Typography variant="body1" sx={{color:theme.palette.primary.contrastText,position:"relative",top:"16px",left:"15px",width:"320px",fontSize:{xs:"0.8rem",md:"1rem"}}}>
+                      Sous le parrainage du Ministère de la Poste et de la Transformation Digitale
                   </Typography>
               </Grid>
-              <Grid xs={12} sm={6} sx={{padding:{xs:"20px 0px 0px 0px",md:"20px 85px 0px 0px"}}}>
+              <Grid xs={12} sm={2} sx={{display:{xs:"grid",md:"none"},padding:{xs:"0px 0 0 0",md:"110px 0px 0px 1.333vw"}}}>
+              </Grid>
+              <Grid xs={12} sm={4} sx={{width:{xs:"50px", md:"600px"},margin:{xs:"65px 0 0 0",md:"100px auto"},padding:{xs:"0px 0px 0px 0px",md:"0px 0px 0px 0px"}}}>
                 <Grid container>
-                  <Grid xs={12} sx={{padding:{xs:"0px 10px 0px 0px",md:"0"}}}>
+                  <Grid xs={12} sx={{padding:{xs:"0px 20px 0px 0px",md:"0px 30px 0px 0px"}}}>
                     <Typography variant="h4" sx={{color:theme.palette.primary.contrastText,float:"right",fontSize:{xs:"2.25rem",md:"2.75rem"}}}>
-                      <Box component={"span"}  sx={{display:"block",fontWeight:"521"}}>29-30-31</Box>
-                      <Box component={"span"}  sx={{float:"right"}}>Mars</Box>
+                      <Box component={"span"}  sx={{display:"block",fontWeight:"521", color:"#96347c"}}>29-30-31</Box>
+                      <Box component={"span"}  sx={{float:"right", color:"#00a3ff"}}>Mars</Box>
                     </Typography >
                   </Grid>
-                  <Grid xs={12} sx={{position:"relative",top:{xs:"9px",md:"39px"}}}>
-                    <Typography sx={{textAlign:"end",color:theme.palette.primary.contrastText,fontSize:{xs:"4vw",sm:"2rem"},paddingRight:{xs:"10px",md:"0"}}}>
-                      <Box component={"span"}  sx={{display:"block"}}>Lieu : </Box>
-                      <Box component={"img"} sx={{width:{xs:"250",sm:"300px"},height:"auto",marginTop:"15px"}} src={Lieux} alt=""/>
+                  <Grid xs={12} sx={{padding:{xs:"0px 20px 0px 0px",md:"0px 30px 0px 0px"},position:"relative",top:{xs:"9px",md:"10vw"}}}>
+                    <Typography sx={{textAlign:"end",color:theme.palette.primary.contrastText,float:"right",fontSize:{xs:"4vw",md:"2rem",sm:"1.8rem"}}}>
+                      <Box component={"span"}  sx={{display:"block", position:"relative"}}>Lieu : </Box>
+                      <Box component={"img"} sx={{width:{xs:"250",sm:"200px", md:"300px"},height:"auto",marginTop:"15px"}} src={Lieux} alt=""/>
+                      <Box component={"span"}  sx={{display:"block" }}>Iarivo Andohatapenaka</Box>
                     </Typography>
                   </Grid>
                 </Grid>
               </Grid>
-            </Grid>
-            <Grid container sx={{marginTop:{xs:"1rem",md:"5.5rem"}}}>
+            </Grid> 
+            <Grid container sx={{marginTop:{xs:"1rem",md:"0rem"}}}>
               <Grid xs={0} md={6}></Grid>
               <Grid xs={12} md={6}>
                   <Grid container justifyContent={"center"}>
@@ -133,7 +143,7 @@ export default function HeroSection() {
                     </Typography>
                   </Grid>
               </Grid>
-            </Grid>               
+            </Grid>              
           </Box>
         </Box>
 

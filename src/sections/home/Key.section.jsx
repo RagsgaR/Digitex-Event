@@ -68,7 +68,7 @@ export function KeyNumbers(){
           sx={{  width:{xs:"100vw",sm:"380px"},marginLeft:{xs:"0",sm:"4px"}}}
           container >
             <Grid xs={10}>
-              <Title sx={{fontSize:{xs:"16px",sm:"20px"}}}>
+              <Title sx={{fontSize:{xs:"16px",sm:"20px"}, paddingTop:"4px"}}>
                LES CHIFFRES CLÉS
               </Title>          
             </Grid>

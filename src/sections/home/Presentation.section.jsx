@@ -27,14 +27,14 @@ const Para2 = styled(Typography)({
 export function Presentation(){
   return (
     <>
-  <Box sx={{marginTop:"30px",zIndex:"99",position:"relative"}}>
+  <Box sx={{marginTop:"36px",zIndex:"99",position:"relative"}}>
     {/* <Box component={"img"} sx={{height:"auto",width:"100%",position:"absolute",zIndex:"1"}} src={Fond} alt=""/> */}
     <Box sx={{zIndex:"99"}}>
             <ContentTitle
             sx={{  width:{xs:"100vw",sm:"380px"},marginLeft:{xs:"0",sm:"4px"}}}
             container>
               <Grid xs={10}>
-              <Title sx={{fontSize:{xs:"16px",sm:"20px"}}}>
+              <Title sx={{fontSize:{xs:"16px",sm:"20px"},paddingTop:"4px"}}>
                 PRESENTATION DIGITEX
               </Title>          
               </Grid>

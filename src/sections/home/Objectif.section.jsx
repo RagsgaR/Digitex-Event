@@ -30,10 +30,10 @@ export function ObjectifSection(){
       <Grid xs={12} md={7} sx={{zIndex:"99"}}   >
         <Box>
         <ContentTitle
-        sx={{  width:{xs:"100vw",sm:"380px"},marginLeft:{xs:"0",sm:"4px"}}}
+        sx={{width:{xs:"100vw",sm:"380px"},marginLeft:{xs:"0",sm:"4px"}, marginBottom:"16px"}}
             container>
             <Grid xs={10}>
-            <Title sx={{fontSize:{xs:"16px",sm:"20px"}}}>
+            <Title sx={{fontSize:{xs:"16px",sm:"20px"}, paddingTop:"4px"}}>
               OBJECTIFS
             </Title>          
             </Grid>
@@ -42,72 +42,72 @@ export function ObjectifSection(){
             </Grid>
         </ContentTitle> 
         <Box className="content-Objectif" p={2}>
-          <Grid container sx={{marginBottom:"9px"}}>
+          <Grid container sx={{marginBottom:"10px"}}>
             <Grid xs={2} sm={1.3}>
               <Triangle/>
             </Grid>
             <Grid xs={9}>
-              <Title sx={{marginTop:"9px",fontSize:{xs:"16px",sm:"20px"}}}>
+              <Title sx={{marginTop:"5px",fontSize:{xs:"16px",sm:"20px"}}}>
                 INNOVER
               </Title>
             </Grid>
           </Grid>
-          <Grid container sx={{marginBottom:"9px"}}>
+          <Grid container sx={{marginBottom:"10px"}}>
             <Grid xs={2} sm={1.3}>
               <Triangle/>
             </Grid>
             <Grid xs={9}>
-              <Title sx={{marginTop:"9px",fontSize:{xs:"16px",sm:"20px"}}}>
+              <Title sx={{marginTop:"5px",fontSize:{xs:"16px",sm:"20px"}}}>
                 DÉVELOPPER
               </Title>
             </Grid>
           </Grid>
-          <Grid container sx={{marginBottom:"9px"}}>
+          <Grid container sx={{marginBottom:"10px"}}>
             <Grid xs={2} sm={1.3}>
               <Triangle/>
             </Grid>
             <Grid xs={9}>
-              <Title sx={{marginTop:"9px",fontSize:{xs:"16px",sm:"20px"}}}>
+              <Title sx={{marginTop:"5px",fontSize:{xs:"16px",sm:"20px"}}}>
                 ÉCHANGER
               </Title>
             </Grid>
           </Grid>
-          <Grid container sx={{marginBottom:"9px"}}>
+          <Grid container sx={{marginBottom:"10px"}}>
             <Grid xs={2} sm={1.3}>
               <Triangle/>
             </Grid>
             <Grid xs={9}>
-              <Title sx={{marginTop:"9px",fontSize:{xs:"16px",sm:"20px"}}}>
+              <Title sx={{marginTop:"5px",fontSize:{xs:"16px",sm:"20px"}}}>
                 ORIENTER
               </Title>
             </Grid>
           </Grid>
-          <Grid container sx={{marginBottom:"9px"}}>
+          <Grid container sx={{marginBottom:"10px"}}>
             <Grid xs={2} sm={1.3}>
               <Triangle/>
             </Grid>
             <Grid xs={9}>
-              <Title sx={{marginTop:"9px",fontSize:{xs:"16px",sm:"20px"}}}>
+              <Title sx={{marginTop:"5px",fontSize:{xs:"16px",sm:"20px"}}}>
                 INITIER
               </Title>
             </Grid>
           </Grid>
-          <Grid container sx={{marginBottom:"9px"}}>
+          <Grid container sx={{marginBottom:"10px"}}>
             <Grid xs={2} sm={1.3}>
               <Triangle/>
             </Grid>
             <Grid xs={9}>
-              <Title sx={{marginTop:"9px",fontSize:{xs:"16px",sm:"20px"}}}>
+              <Title sx={{marginTop:"5px",fontSize:{xs:"16px",sm:"20px"}}}>
                 RECRUTER
               </Title>
             </Grid>
           </Grid>
-          <Grid container sx={{marginBottom:"9px"}}>
+          <Grid container sx={{marginBottom:"10px"}}>
             <Grid xs={2} sm={1.3}>
               <Triangle/>
             </Grid>
             <Grid xs={9}>
-              <Title sx={{marginTop:"9px",fontSize:{xs:"16px",sm:"20px"}}}>
+              <Title sx={{marginTop:"5px",fontSize:{xs:"16px",sm:"20px"}}}>
                 RÉSEAUTER
               </Title>
             </Grid>

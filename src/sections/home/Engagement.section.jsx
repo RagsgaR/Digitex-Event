@@ -22,11 +22,11 @@ const Title = styled(Typography)(({theme})=>({
 export function EngagementSection(){
   return(
     <>
-    <Box mt={"2rem"}>
+    <Box mt={"0rem"}>
          <ContentTitle
             sx={{  width:{xs:"100vw",sm:"680px"},marginLeft:{xs:"0",sm:"4px"}}}
             container>
-            <Title sx={{fontSize:{xs:"16px",sm:"20px"},paddingRight:{xs:"5px",sm:"0"}}}>
+            <Title sx={{fontSize:{xs:"16px",sm:"20px"},paddingRight:{xs:"5px",sm:"0"},paddingTop:"4px"}}>
              DEVENEZ PARTICIPANT ET RÉSERVEZ VOTRE EMPLACEMENT
             </Title> 
           </ContentTitle> 
