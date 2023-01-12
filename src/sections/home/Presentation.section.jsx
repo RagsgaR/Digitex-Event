@@ -14,7 +14,7 @@ const Title = styled(Typography)(({theme})=>({
   fontWeight:"515",
 }))
 const Para2 = styled(Typography)({
-  color:"white",
+  color:"#f5f7f8 !important",
   fontSize:"15px",
   fontWeight:"510",
   
@@ -61,7 +61,7 @@ export function Presentation(){
           </Para2>
           <br/>
           <Para2>
-              c'est pourquoi ils seront à l'honneur de l'edition du Salon DIGITEX 2023,
+              C'est pourquoi ils seront à l'honneur de l'edition du Salon DIGITEX 2023,
               le 29 au 31 Mars 2023 prochains à partir de 09H00 au CANAL Olympia larivo Andohatapenaka.
           </Para2>
       </Box>      

@@ -71,7 +71,7 @@ export default function HeroSection() {
       {/* <Box sx={{paddingTop:{xs:"66px",md:"82px"}}}> */}
         <Box >
           <Box sx={{position:"absolute"}}>
-            <Box component={"img"}  src={BG} sx={{width:'99.8vw',height:height,zIndex:"1"}} alt=""/>
+            <Box component={"img"}  src={BG} sx={{width:'99.1vw',height:height,zIndex:"1"}} alt=""/>
           </Box>
           <Box ref={containerRef} sx={{zIndex:"99",position:"relative",padding:"4px"}}>
             <Grid container >
@@ -81,32 +81,39 @@ export default function HeroSection() {
               <Grid xs={12} sm={6} sx={{display:"grid",padding:{xs:"80px 0 0 20px",md:"120px 0px 0px 4vw"}}}>
                   <Title sx={{display:"inline"}}>
                     <Box component={"span"} sx={{fontSize:{xs:"2rem",md:"2.6rem"},color:"#96347c", fontWeight:"516"}}>Salon</Box>
-                    <Box component={"span"} sx={{display:"block",fontWeight:"516",fontSize:{xs:"3rem",md:"4rem"},marginTop:{xs:"-18px",md:"-30px"}}}> DIGITEX<Box component={"span"} sx={{fontSize:{xs:"2.2rem",md:"2.6rem"},color:"#00a3ff"}}>2023</Box></Box> 
-                    <Box component={"span"} sx={{display:"block",fontWeight:"516",color:"#a43981",fontSize:{xs:"1.2rem",md:"2vw", sm:"1.2rem"},marginTop:{xs:"-18px",md:"-22px"}}}> Digitalisation-Technologie-Externalisation</Box> 
+                    <Box component={"span"} sx={{display:"block",fontWeight:"516",fontSize:{xs:"3rem",md:"4rem"},marginTop:{xs:"-18px",md:"-30px"}}}> DIGITEX</Box> 
+                    <Box component={"span"} sx={{display:"block",fontWeight:"516",color:"#a43981",fontSize:{xs:"1.2rem",md:"1.9vw", sm:"1.2rem"},marginTop:{xs:"-18px",md:"-22px"}}}> Digitalisation-Technologie-Externalisation</Box> 
                     {/* <Box component={"span"} sx={{display:"block",fontWeight:"516",fontSize:{xs:"3rem",md:"4rem"},marginTop:{xs:"-18px",md:"-30px"}}}> 2023</Box>  */}
                   </Title>
-                  <Typography variant="h6" sx={{color:theme.palette.primary.contrastText,fontSize:{xs:"1rem",md:"1.25rem"}}}>
+                  <Typography variant="h4" sx={{color:theme.palette.primary.contrastText,float:"right",fontSize:{xs:"2.25rem",md:"3.25rem"}, marginLeft:"50px"}}>
+                      <Box component={"span"}  sx={{display:"block",fontWeight:"521", color:"#96347c"}}>Du <Box component={"span"} sx={{color:"#0040ff",fontSize:"4rem"}}>29</Box> au <Box component={"span"} sx={{color:"#0040ff",fontSize:"4rem"}}>31</Box></Box>
+                      <Box component={"span"}  sx={{color:"#00a3ff",fontWeight:"521"}}>Mars 2023</Box>
+                  </Typography >
+                  {/* <Typography variant="h6" sx={{color:theme.palette.primary.contrastText,fontSize:{xs:"1rem",md:"1.25rem"}}}>
                   "La transition numérique au coeur du développement"
-                  </Typography>
-                  <Typography variant="body1" sx={{color:theme.palette.primary.contrastText,position:"relative",top:"16px",left:"15px",width:"320px",fontSize:{xs:"0.8rem",md:"1rem"}}}>
+                  </Typography> */}
+                  {/* <Typography variant="body1" sx={{color:theme.palette.primary.contrastText,position:"relative",top:"16px",left:"15px",width:"320px",fontSize:{xs:"0.8rem",md:"1rem"}}}>
                       Sous le parrainage du Ministère de la Poste et de la Transformation Digitale
-                  </Typography>
+                  </Typography> */}
               </Grid>
               <Grid xs={12} sm={2} sx={{display:{xs:"grid",md:"none"},padding:{xs:"0px 0 0 0",md:"110px 0px 0px 1.333vw"}}}>
               </Grid>
               <Grid xs={12} sm={4} sx={{width:{xs:"50px", md:"600px"},margin:{xs:"65px 0 0 0",md:"100px auto"},padding:{xs:"0px 0px 0px 0px",md:"0px 0px 0px 0px"}}}>
                 <Grid container>
                   <Grid xs={12} sx={{padding:{xs:"0px 20px 0px 0px",md:"0px 30px 0px 0px"}}}>
-                    <Typography variant="h4" sx={{color:theme.palette.primary.contrastText,float:"right",fontSize:{xs:"2.25rem",md:"2.75rem"}}}>
-                      <Box component={"span"}  sx={{display:"block",fontWeight:"521", color:"#96347c"}}>29-30-31</Box>
-                      <Box component={"span"}  sx={{float:"right", color:"#00a3ff"}}>Mars</Box>
-                    </Typography >
+                  <Typography variant="h6" sx={{textAlign:"end", color:"#171544",fontWeight:"521",fontSize:{xs:"1rem",md:"2.5rem"}}}>
+                  "La transition numérique au coeur du développement"
+                  </Typography>
+                    {/* <Typography variant="h4" sx={{color:theme.palette.primary.contrastText,float:"right",fontSize:{xs:"2.25rem",md:"3.25rem"}}}>
+                      <Box component={"span"}  sx={{display:"block",fontWeight:"521", color:"#96347c"}}>Du <Box component={"span"} sx={{color:"#0040ff"}}>29</Box> au <Box component={"span"} sx={{color:"#0040ff"}}>31</Box></Box>
+                      <Box component={"span"}  sx={{float:"right", color:"#00a3ff",fontweight:"521"}}>Mars 2023</Box>
+                    </Typography > */}
                   </Grid>
-                  <Grid xs={12} sx={{padding:{xs:"0px 20px 0px 0px",md:"0px 30px 0px 0px"},position:"relative",top:{xs:"9px",md:"10vw"}}}>
-                    <Typography sx={{textAlign:"end",color:theme.palette.primary.contrastText,float:"right",fontSize:{xs:"4vw",md:"2rem",sm:"1.8rem"}}}>
-                      <Box component={"span"}  sx={{display:"block", position:"relative"}}>Lieu : </Box>
+                  <Grid xs={12} sx={{padding:{xs:"0px 20px 0px 0px",md:"0px 30px 0px 0px"},position:"relative",top:{xs:"9px",md:"4vw"}}}>
+                    <Typography sx={{textAlign:"end",color:theme.palette.primary.contrastText,float:"right",fontSize:{xs:"1.6rem",md:"2rem",sm:"1.8rem"}}}>
+                      <Box component={"span"}  sx={{display:"block", position:"relative"}}>Au </Box>
                       <Box component={"img"} sx={{width:{xs:"250",sm:"200px", md:"300px"},height:"auto",marginTop:"15px"}} src={Lieux} alt=""/>
-                      <Box component={"span"}  sx={{display:"block" }}>Iarivo Andohatapenaka</Box>
+                      <Box component={"span"}  sx={{display:"block" }}>Andohatapenaka</Box>
                     </Typography>
                   </Grid>
                 </Grid>

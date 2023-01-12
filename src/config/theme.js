@@ -12,7 +12,10 @@ const themeOptions = {
       main: "#17FA03",
     },
     background: {
-      default: " #8CCEDDD1",
+      default:"linear-gradient(45deg, #36d1dc 30%, #5b86e5 90%)",
+      //default:"rgba(140, 206, 221, 0.82)",
+      //default:"#8CCEDD",
+      //default: " #8CCEDDD1",
       paper: "linear-gradient(45deg,  #7181F7 30%, #B712A5 90%)",
     },
     divider: "rgba(230,221,221,0.12)",

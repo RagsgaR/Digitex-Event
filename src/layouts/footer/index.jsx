@@ -6,6 +6,7 @@ import { Markunread } from "@mui/icons-material";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { Facebook } from "@mui/icons-material";
 import { Twitter } from "@mui/icons-material";
+import "./footer.css"
 
 const container = {
   show: {
@@ -40,18 +41,18 @@ export default function Footer() {
       <motion.footer
       >
         <Stack
-          height={300}
+          height={200}
           justifyContent="space-between"
           sx={{
             backgroundColor: "#27215F",
             // overflow: "hidden",
             position: "relative",
-            width: "100vw",
+            //width: "100vw",
             // left: 10,
             // right: 10,
             // height: "80vh",
             height:"auto",
-            paddingBottom:{xs:"0",md:"100px"}
+            paddingBottom:{xs:"0",md:"0"}
           }}
         >
           <Box p={2} sx={{paddingTop:"42px"}}>
@@ -70,7 +71,7 @@ export default function Footer() {
                   <Markunread/> &#160; salon.digitex2022@gmail.com
                 </Typography>
               </Grid>
-              <Grid xs={12} sm={6} md={4}>
+              <Grid xs={12} sm={6} md={4} sx={{display:{xs:"none",md:"grid"}}}>
               <Typography sx={{fontSize:"36px",fontFamily:"initial",fontWeight:"538",marginBottom:"22px",textAlign:{xs:"center",sm:"start"}}} color="white">
                     Infos Pratique
                 </Typography>
@@ -80,7 +81,7 @@ export default function Footer() {
               </Grid>
               <Grid xs={12} sm={6} md={4}>
                   <Typography sx={{fontSize:"36px",fontFamily:"initial",fontWeight:"538",marginBottom:"22px",textAlign:{xs:"center",md:"start"}}} color="white">
-                        nous suivre
+                        Nous suivre
                     </Typography>
                     <Typography sx={{fontSize:"15px",display:"flex",alignItems:"center",marginBottom:"5px",textAlign:{xs:"center",md:"start"},justifyContent:{xs:"center",md:"start"}}} color="white">
                       <Avatar>
@@ -91,6 +92,21 @@ export default function Footer() {
                         <Twitter sx={{color:"#B712A5"}}/>
                       </Avatar>
                     </Typography>
+              </Grid>
+              <Grid container sx={{borderTop:"1px solid #fff", padding:"20px 20px 20px 0", margin:"20px 50px 0px 50px"}}>
+                <Grid xs={12} sm={12} md={6} sx={{display:"flex", alignItems:"center", justifyContent:"center"}}>
+                    <Typography sx={{fontSize:"13px",fontFamily:"montsert",textAlign:{xs:"center",md:"center"}}} color="white">
+                      © Copyright 2023 - Salon DIGITEX | All Rights Reserved
+                    </Typography>
+                </Grid>
+                <Grid xs={12} sm={12} md={3} sx={{display:"flex", alignItems:"center", justifyContent:"center"}}>
+                    <Typography sx={{fontSize:"18px",fontFamily:"montsert",fontWeight:"500",textAlign:{xs:"center",md:"center"}}} color="white">
+                      Plus de renseignements ?
+                    </Typography>
+                </Grid>
+                <Grid xs={12} sm={12} md={3} sx={{fontFamily:"montsert",display:"grid", justifyContent:"center"}}>
+                  <button class={"button"} >CONTACTEZ-NOUS</button>
+                </Grid>
               </Grid>
             </Grid>
           </Box>
