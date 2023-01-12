@@ -80,14 +80,14 @@ export default function HeroSection() {
               </Grid>
               <Grid xs={12} sm={6} sx={{display:"grid",padding:{xs:"80px 0 0 20px",md:"120px 0px 0px 4vw"}}}>
                   <Title sx={{display:"inline"}}>
-                    <Box component={"span"} sx={{fontSize:{xs:"2rem",md:"2.6rem"},color:"#96347c", fontWeight:"516"}}>Salon</Box>
-                    <Box component={"span"} sx={{display:"block",fontWeight:"516",fontSize:{xs:"3rem",md:"4rem"},marginTop:{xs:"-18px",md:"-30px"}}}> DIGITEX</Box> 
+                    <Box component={"span"} sx={{fontSize:{xs:"2rem",md:"2.6rem"},color:"#0040ff", fontWeight:"516"}}>Salon</Box>
+                    <Box component={"span"} sx={{display:"block",fontWeight:"516",fontSize:{xs:"3rem",md:"6rem"},marginTop:{xs:"-18px",md:"-30px"}}}> DIGITEX</Box> 
                     <Box component={"span"} sx={{display:"block",fontWeight:"516",color:"#a43981",fontSize:{xs:"1.2rem",md:"1.9vw", sm:"1.2rem"},marginTop:{xs:"-18px",md:"-22px"}}}> Digitalisation-Technologie-Externalisation</Box> 
                     {/* <Box component={"span"} sx={{display:"block",fontWeight:"516",fontSize:{xs:"3rem",md:"4rem"},marginTop:{xs:"-18px",md:"-30px"}}}> 2023</Box>  */}
                   </Title>
-                  <Typography variant="h4" sx={{color:theme.palette.primary.contrastText,float:"right",fontSize:{xs:"2.25rem",md:"3.25rem"}, marginLeft:"50px"}}>
-                      <Box component={"span"}  sx={{display:"block",fontWeight:"521", color:"#96347c"}}>Du <Box component={"span"} sx={{color:"#0040ff",fontSize:"4rem"}}>29</Box> au <Box component={"span"} sx={{color:"#0040ff",fontSize:"4rem"}}>31</Box></Box>
-                      <Box component={"span"}  sx={{color:"#00a3ff",fontWeight:"521"}}>Mars 2023</Box>
+                  <Typography variant="h4" sx={{color:theme.palette.primary.contrastText,float:"right",fontSize:{xs:"2.25rem",md:"5vw"}, marginLeft:"50px"}}>
+                      <Box component={"span"}  sx={{display:"block",fontWeight:"521", color:"#fff"}}>Du <Box component={"span"} sx={{color:"#0040ff",fontSize:"4rem"}}>29</Box> au <Box component={"span"} sx={{color:"#0040ff",fontSize:"4rem"}}>31</Box></Box>
+                      <Box component={"span"}  sx={{color:"#fff",fontWeight:"521"}}>Mars 2023</Box>
                   </Typography >
                   {/* <Typography variant="h6" sx={{color:theme.palette.primary.contrastText,fontSize:{xs:"1rem",md:"1.25rem"}}}>
                   "La transition numérique au coeur du développement"
