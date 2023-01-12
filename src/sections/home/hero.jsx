@@ -14,6 +14,15 @@ const Title=styled(Typography)(({theme})=>({
   paddingTop:"12px",
   color:theme.palette.primary.contrastText
 }))
+const BigTitle = styled(Typography)(({theme})=>({
+    fontSize:"6rem",
+    fontWeight:"516",//#ffd89b → #19547b #ff512f → #dd2476
+    background: "-webkit-linear-gradient(45deg, #ff512f 30%, #dd2476 90%)",
+    // background: "-webkit-linear-gradient(90deg, #FE6B8B 30%, #FF8E53 90%)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent"
+  
+}))
 
 function dateDiff(staticDate,currentDate){
   var diff ={}
@@ -81,13 +90,19 @@ export default function HeroSection() {
               <Grid xs={12} sm={6} sx={{display:"grid",padding:{xs:"80px 0 0 20px",md:"120px 0px 0px 4vw"}}}>
                   <Title sx={{display:"inline"}}>
                     <Box component={"span"} sx={{fontSize:{xs:"2rem",md:"2.6rem"},color:"#0040ff", fontWeight:"516"}}>Salon</Box>
-                    <Box component={"span"} sx={{display:"block",fontWeight:"516",fontSize:{xs:"3rem",md:"6rem"},marginTop:{xs:"-18px",md:"-30px"}}}> DIGITEX</Box> 
+                    <Box component={"span"} sx={{display:"block",fontWeight:"516",fontSize:{xs:"3rem",md:"6rem"},marginTop:{xs:"-18px",md:"-30px"}, fontSize:"6rem",fontWeight:"516",background: "-webkit-linear-gradient(45deg, #ff512f 30%, #dd2476 90%)",WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent"}}>
+                       DIGITEX
+                       
+                    </Box> 
                     <Box component={"span"} sx={{display:"block",fontWeight:"516",color:"#a43981",fontSize:{xs:"1.2rem",md:"1.9vw", sm:"1.2rem"},marginTop:{xs:"-18px",md:"-22px"}}}> Digitalisation-Technologie-Externalisation</Box> 
                     {/* <Box component={"span"} sx={{display:"block",fontWeight:"516",fontSize:{xs:"3rem",md:"4rem"},marginTop:{xs:"-18px",md:"-30px"}}}> 2023</Box>  */}
                   </Title>
                   <Typography variant="h4" sx={{color:theme.palette.primary.contrastText,float:"right",fontSize:{xs:"2.25rem",md:"5vw"}, marginLeft:"50px"}}>
-                      <Box component={"span"}  sx={{display:"block",fontWeight:"521", color:"#fff"}}>Du <Box component={"span"} sx={{color:"#0040ff",fontSize:"4rem"}}>29</Box> au <Box component={"span"} sx={{color:"#0040ff",fontSize:"4rem"}}>31</Box></Box>
-                      <Box component={"span"}  sx={{color:"#fff",fontWeight:"521"}}>Mars 2023</Box>
+                      <Box component={"span"}  sx={{display:"block",fontWeight:"521", color:"#fff"}}>Du <Box component={"span"} sx={{fontSize:"4rem",fontWeight:"516",background: "-webkit-linear-gradient(45deg, 	#ffab00 30%, #a6001a 90%)",WebkitBackgroundClip: "text",
+  WebkitTextFillColor: "transparent"}}>29</Box> au <Box component={"span"} sx={{fontSize:"4rem",fontWeight:"516",background: "-webkit-linear-gradient(45deg, 	#ffab00 30%, #a6001a 90%)",WebkitBackgroundClip: "text",
+  WebkitTextFillColor: "transparent"}}>31</Box></Box>
+                      <Box component={"span"}  sx={{color:"#0040ff",fontWeight:"521"}}>Mars 2023</Box>
                   </Typography >
                   {/* <Typography variant="h6" sx={{color:theme.palette.primary.contrastText,fontSize:{xs:"1rem",md:"1.25rem"}}}>
                   "La transition numérique au coeur du développement"
@@ -111,9 +126,13 @@ export default function HeroSection() {
                   </Grid>
                   <Grid xs={12} sx={{padding:{xs:"0px 20px 0px 0px",md:"0px 30px 0px 0px"},position:"relative",top:{xs:"9px",md:"4vw"}}}>
                     <Typography sx={{textAlign:"end",color:theme.palette.primary.contrastText,float:"right",fontSize:{xs:"1.6rem",md:"2rem",sm:"1.8rem"}}}>
-                      <Box component={"span"}  sx={{display:"block", position:"relative"}}>Au </Box>
+                      <Box component={"span"}  sx={{display:"block", position:"relative", fontWeight:"516",background: "-webkit-linear-gradient(45deg, #ff512f 30%, #dd2476 90%)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent"}}>Au </Box>
                       <Box component={"img"} sx={{width:{xs:"250",sm:"200px", md:"300px"},height:"auto",marginTop:"15px"}} src={Lieux} alt=""/>
-                      <Box component={"span"}  sx={{display:"block" }}>Andohatapenaka</Box>
+                      <Box component={"span"}  sx={{display:"block",fontWeight:"516",background: "-webkit-linear-gradient(45deg, #ff512f 30%, #dd2476 90%)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent"}}>Andohatapenaka</Box>
                     </Typography>
                   </Grid>
                 </Grid>
@@ -124,21 +143,24 @@ export default function HeroSection() {
               <Grid xs={12} md={6}>
                   <Grid container justifyContent={"center"}>
                     <Typography  sx={{color:theme.palette.primary.contrastText,fontWeight:"512",display:"flex",fontSize:{xs:"2.7rem",sm:"3rem"}}}>
-                      <Box component={'span'}>
+                      <Box component={'span'} sx={{background: "-webkit-linear-gradient(45deg, 	#ffab00 30%, #a6001a 90%)",WebkitBackgroundClip: "text",
+  WebkitTextFillColor: "transparent"}}>
                           {minuteur.day} 
                         <Box component={"span"}  sx={{display:"block",fontSize:"1rem",textAlign:"center"}}>Jours</Box> 
 
                       </Box>
                       <Space/> : <Space/>
-                      <Box component={'span'}>
+                      <Box component={'span'} sx={{background: "-webkit-linear-gradient(45deg, 	#ffab00 30%, #a6001a 90%)",WebkitBackgroundClip: "text",
+  WebkitTextFillColor: "transparent"}}>
                           {minuteur.hour}
                         <Box component={"span"}  sx={{display:"block",fontSize:"1rem",textAlign:"center"}}>Heurs</Box> 
 
                       </Box>
                        <Space/> : <Space/>
-                      <Box component={'span'}>
+                      <Box component={'span'} sx={{background: "-webkit-linear-gradient(45deg, 	#ffab00 30%, #a6001a 90%)",WebkitBackgroundClip: "text",
+  WebkitTextFillColor: "transparent"}}>
                           {minuteur.min} 
-                        <Box component={"span"}  sx={{display:"block",fontSize:"1rem",textAlign:"center"}}>Minute</Box> 
+                        <Box component={"span"}  sx={{color:"white",display:"block",fontSize:"1rem",textAlign:"center"}}>Minute</Box> 
 
                       </Box>
                        {/* <Space/> : <Space/>
