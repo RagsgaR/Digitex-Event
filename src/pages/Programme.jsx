@@ -1,10 +1,12 @@
 import React from "react"
 import { Box, Grid,styled,Typography, useTheme } from "@mui/material";
+import Date from "../assets/calendar.svg"
 import Cube from "../assets/cube.png"
 
 const Title = styled(Typography)(({theme})=>({
   color:"white",
-  fontWeight:"515",
+  fontWeight:"512",
+  fontFamily:" montsert"
 }))
 const ContentTitle = styled(Grid)(({theme})=>({
 
@@ -42,44 +44,56 @@ export default function Programme(){
               </Grid>
               <Grid xs={10} sm={12} sx={{display:"flex", alignItems:"center", justifyContent:"center"}}>
                 <ContentTitle
-                sx={{width:{xs:"100vw",sm:"380px"},marginLeft:{xs:"0",sm:"4px"}, marginBottom:"16px"}}
+                sx={{width:{xs:"100vw",sm:"85vw"}, marginBottom:"16px", padding:"10px"}}
                     container>
-                    <Grid xs={10}>
-                    <Title sx={{fontSize:{xs:"16px",sm:"20px"}, paddingTop:"4px"}}>
-                      MECREDI 29 MARS
-                    </Title>          
-                    </Grid>
-                    <Grid xs={2}>
-                      <img style={{width:"auto",height:"25px"}} src={Cube} alt=''/>
-                    </Grid>
+                  <Grid sm={2.2} sx={{display:"inherit",borderRight:"1px solid #fff"}}>
+                    <Box xs={2} >
+                      <img style={{width:"50px",height:"50px"}} src={Date} alt=''/>
+                    </Box>
+                    <Box sx={{marginLeft:"10px",display:"flex", alignItems:"center", justifyContent:"center"}}>
+                      <Title component={"span"} sx={{fontSize:{xs:"16px",sm:"20px"}, paddingBottom:"0", lineHeight: "initial"}}>
+                        MECREDI<br/>
+                        29 MARS
+                      </Title>
+                    </Box>
+                  </Grid>
                 </ContentTitle>
               </Grid>
-              <Grid>
+              <Grid xs={10} sm={12} sx={{display:"flex", alignItems:"center", justifyContent:"center"}}>
                 <ContentTitle
-                sx={{width:{xs:"100vw",sm:"380px"},marginLeft:{xs:"0",sm:"4px"}, marginBottom:"16px"}}
+                sx={{width:{xs:"100vw",sm:"85vw"}, marginBottom:"16px", padding:"10px"}}
                     container>
-                    <Grid xs={10}>
-                    <Title sx={{fontSize:{xs:"16px",sm:"20px"}, paddingTop:"4px"}}>
-                      MECREDI 30 MARS
-                    </Title>          
-                    </Grid>
-                    <Grid xs={2}>
-                      <img style={{width:"auto",height:"25px"}} src={Cube} alt=''/>
-                    </Grid>
+                  <Grid sm={2.2} sx={{display:"inherit",borderRight:"1px solid #fff"}}>
+                    <Box xs={2} >
+                      <img style={{width:"50px",height:"50px"}} src={Date} alt=''/>
+                    </Box>
+                    <Box sx={{marginLeft:"10px",display:"flex", alignItems:"center", justifyContent:"center"}}>
+                      <Title component={"span"} sx={{fontSize:{xs:"16px",sm:"20px"}, paddingBottom:"0", lineHeight: "initial"}}>
+                        JEUDI<br/>
+                        30 MARS
+                      </Title>
+                    </Box>
+                  </Grid>
                 </ContentTitle>
+              </Grid>
+              <Grid xs={10} sm={12} sx={{display:"flex", alignItems:"center", justifyContent:"center"}}>
                 <ContentTitle
-                sx={{width:{xs:"100vw",sm:"380px"},marginLeft:{xs:"0",sm:"4px"}, marginBottom:"16px"}}
+                sx={{width:{xs:"100vw",sm:"85vw"}, marginBottom:"16px", padding:"10px"}}
                     container>
-                    <Grid xs={10}>
-                    <Title sx={{fontSize:{xs:"16px",sm:"20px"}, paddingTop:"4px"}}>
-                      MECREDI 31 MARS
-                    </Title>          
-                    </Grid>
-                    <Grid xs={2}>
-                      <img style={{width:"auto",height:"25px"}} src={Cube} alt=''/>
-                    </Grid>
+                  <Grid sm={2.2} sx={{display:"inherit",borderRight:"1px solid #fff"}}>
+                    <Box xs={2} >
+                      <img style={{width:"50px",height:"50px"}} src={Date} alt=''/>
+                    </Box>
+                    <Box sx={{marginLeft:"10px",display:"flex", alignItems:"center", justifyContent:"center"}}>
+                      <Title component={"span"} sx={{fontSize:{xs:"16px",sm:"20px"}, paddingBottom:"0", lineHeight: "initial"}}>
+                        VENDREDI<br/>
+                        31 MARS
+                      </Title>
+                    </Box>
+                  </Grid>
                 </ContentTitle>
-            </Grid>
+              </Grid>
+              
           </Grid> 
     </Box>
       
