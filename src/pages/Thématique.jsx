@@ -70,7 +70,7 @@ export default function Thématique() {
               </ComponentLogo>
             </Grid>
             <Grid xs={9}>
-              <Para2>Entreprises de Service Numérique,</Para2>
+              <Para2>Entreprises de Services du Numérique,</Para2>
             </Grid>
           </Grid>
           <Grid container sx={{ marginBottom: "12px", alignItems: "center" }}>
@@ -92,7 +92,7 @@ export default function Thématique() {
             </Grid>
             <Grid xs={9}>
               <Para2>
-                Les entreprises d'Outsoucing : Call Center,assistant...
+                Entreprises d'Outsoucing : Call Center,assistant...
               </Para2>
             </Grid>
           </Grid>
@@ -114,7 +114,7 @@ export default function Thématique() {
               </ComponentLogo>
             </Grid>
             <Grid xs={9}>
-              <Para2>Fournisseurs en téléphoniques et internet,</Para2>
+              <Para2>Fournisseurs en téléphonie et internet,</Para2>
             </Grid>
           </Grid>
           <Grid container sx={{ marginBottom: "12px", alignItems: "center" }}>

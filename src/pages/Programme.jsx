@@ -121,7 +121,7 @@ export default function Programme() {
                     économique,
                   </Typography>
                 </Box>
-                <Box component={"li"} className={classes.ComponentList}>
+                {/* <Box component={"li"} className={classes.ComponentList}>
                   <Typography
                     className={classes.List}
                     sx={{
@@ -130,7 +130,7 @@ export default function Programme() {
                     }}>
                     10h : Fintech et Cryptomonnaie
                   </Typography>
-                </Box>
+                </Box> */}
               </Box>
             </Grid>
           </ContentTitle>
@@ -211,7 +211,7 @@ export default function Programme() {
                       fontSize: { xs: "3.2vw", sm: "1rem" },
                       fontWeight: "512",
                     }}>
-                    9h-12h : Pitcher votre projets et votre idées
+                    9h-12h : Pitchez vos projets et vos idées,
                   </Typography>
                 </Box>
                 <Box component={"li"} className={classes.ComponentList}>
@@ -221,7 +221,7 @@ export default function Programme() {
                       fontSize: { xs: "3.2vw", sm: "1rem" },
                       fontWeight: "512",
                     }}>
-                    10h : Financer vos projects innovants
+                    10h : Comment financer vos projets innovants?
                   </Typography>
                 </Box>
               </Box>
@@ -303,7 +303,7 @@ export default function Programme() {
                       fontSize: { xs: "3.2vw", sm: "1rem" },
                       fontWeight: "512",
                     }}>
-                    10h : La maîtrise du big data comme outils stratégique,
+                    10h : La maîtrise du big data comme outils stratégique.
                   </Typography>
                 </Box>
               </Box>
