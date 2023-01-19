@@ -161,7 +161,7 @@ export default function Footer() {
                       container
                       sx={{
                         borderTop: "1px solid #fff",
-                        padding: "20px 20px 20px 0",
+                        padding: "20px 0 20px 0",
                         margin: "20px 50px 0px 50px",
                       }}>
                       <Grid
