@@ -121,6 +121,16 @@ export default function Programme() {
                     économique,
                   </Typography>
                 </Box>
+                <Box component={"li"} className={classes.ComponentList}>
+                  <Typography
+                    className={classes.List}
+                    sx={{
+                      fontSize: { xs: "3.2vw", sm: "1rem" },
+                      fontWeight: "512",
+                    }}>
+                    10h : Comment financer vos projets innovants?
+                  </Typography>
+                </Box>
                 {/* <Box component={"li"} className={classes.ComponentList}>
                   <Typography
                     className={classes.List}
@@ -214,16 +224,7 @@ export default function Programme() {
                     9h-12h : Pitchez vos projets et vos idées,
                   </Typography>
                 </Box>
-                <Box component={"li"} className={classes.ComponentList}>
-                  <Typography
-                    className={classes.List}
-                    sx={{
-                      fontSize: { xs: "3.2vw", sm: "1rem" },
-                      fontWeight: "512",
-                    }}>
-                    10h : Comment financer vos projets innovants?
-                  </Typography>
-                </Box>
+                
               </Box>
             </Grid>
           </ContentTitle>
