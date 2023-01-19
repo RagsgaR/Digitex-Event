@@ -104,7 +104,7 @@ export function Navigation() {
           <button
             class={path === `/Programme` ? "active" : "test"}
             onClick={() => navigate(`/Programme`)}>
-            Programmes
+            Programme
           </button>
         </li>
       </ul>
