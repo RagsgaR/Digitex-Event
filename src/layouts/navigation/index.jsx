@@ -97,14 +97,14 @@ export function Navigation() {
           <button
             class={path === `/Thematics` ? "active" : "test"}
             onClick={() => navigate(`/Thematics`)}>
-            Thématique
+            Thématiques
           </button>
         </li>
         <li>
           <button
             class={path === `/Programme` ? "active" : "test"}
             onClick={() => navigate(`/Programme`)}>
-            Programme
+            Programmes
           </button>
         </li>
       </ul>

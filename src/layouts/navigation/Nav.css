@@ -33,7 +33,8 @@
   margin: 0 5px;
 }
 .nav ul li button{
-  color: #f2f2f2;
+  color:rgb(183, 18, 165);
+  /* color: #f2f2f2; */
   text-decoration: none;
   font-size: 18px;
   font-weight: 509;
