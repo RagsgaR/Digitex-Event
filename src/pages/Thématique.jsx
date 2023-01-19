@@ -225,7 +225,7 @@ export default function Thématique() {
               marginBottom: "14px",
               textAlign: "center",
             }}>
-            univers thématique
+            Univers thématique
           </Title>
           <Grid container sx={{ marginBottom: "12px", alignItems: "center" }}>
             <Grid xs={2}>
