@@ -92,7 +92,7 @@ export default function Thématique() {
             </Grid>
             <Grid xs={9}>
               <Para2>
-                Entreprises d'Outsoucing : Call Center,assistant...
+                Entreprises d'Outsoucing : Call Center,assistanat virtuel...
               </Para2>
             </Grid>
           </Grid>
